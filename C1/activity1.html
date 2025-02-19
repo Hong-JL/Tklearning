@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习活动1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" width="20" height="20">
+                        <path fill="currentColor" d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z"/>
+                    </svg>
+                    首页
+                </a>
+            </li>
+            <li class="nav-item"><a href="activity1.html" class="nav-link active">学习活动1</a></li>
+                      <li class="nav-item"><a href="activity3.html" class="nav-link">学习活动2</a></li>
+                   </ul>
+    </nav>
+
+    <main class="activity-container">
+        <h1 class="page-title">学习活动1：在线交流小探秘</h1>
+        
+        <div class="content-wrapper">
+            <!-- 上方内容区域 -->
+            <div class="main-content">
+                <h2 class="section-title">引言</h2>
+                <div class="content-container">
+                    <div class="timeline-animation">
+                        <!-- 左侧图片组 -->
+                        <div class="left-images">
+                            <img src="image/1.jpg" alt="信件交流" class="timeline-image">
+                            <img src="image/2.jpg" alt="电话交流" class="timeline-image">
+                        </div>
+                        
+                        <!-- 中间图片和连接线 -->
+                        <div class="center-line">
+                            <div class="center-image">
+                                <img src="image/0.svg" alt="在线交流">
+                            </div>
+                            <div class="connection-lines"></div>
+                        </div>
+                        
+                        <!-- 右侧图片组 -->
+                        <div class="right-images">
+                            <img src="image/3.jpg" alt="短信交流" class="timeline-image">
+                            <img src="image/4.jpg" alt="表情包交流" class="timeline-image">
+                            <img src="image/5.jpg" alt="视频通话" class="timeline-image">
+                        </div>
+                    </div>
+                    
+                    <div class="intro-text">
+                        <p>人与人之间的交流，从一封信、一个电话，发展到一条信息、一个表情包、一段视频通话……现在，人们已经习惯于在线交流，方便又快捷。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 下方学习互动区域 -->
+            <div class="learning-interaction">
+                <h2 class="section-title">阅读思考</h2>
+                <p class="section-intro">依次阅读以下场景任务，选择解决方式。<br>若存在困难，可点击"查看细节"获得锦囊再回答，加油吧！</p>
+                <div class="cards-container">
+                    <!-- 家庭场景 -->
+                    <div class="card">
+                        <img src="image/家里.jpg" alt="家庭场景" class="scenario-image">
+                        <h3>家庭场景</h3>
+                        <p>任务：小明爸爸在外地出差，晚上休息时小明想分享绘画比赛获奖作品给爸爸。</p>
+                        <p>请选择以下一种方式，并思考理由。</p>
+                        <form id="family-form">
+                            <label>
+                                <input type="radio" name="family" value="A">
+                                <span>微信视频通话</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="family" value="B">
+                                <span>微信发送图片</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="family" value="C">
+                                <span>朋友圈公开晒图</span>
+                            </label>
+                            <div class="button-group">
+                                <button type="button" class="detail-btn" onclick="viewDetails('family')">查看细节</button>
+                            </div>
+                            <div class="follow-up-question hidden">
+                                <p>追问：如果爸爸正在开会，哪种方式更合适？</p>
+                            </div>
+                        </form>
+                        <div id="family-response"></div>
+                    </div>
+
+                    <!-- 学校场景 -->
+                    <div class="card">
+                        <img src="image/学校.jpg" alt="学校场景" class="scenario-image">
+                        <h3>学校场景</h3>
+                        <p>任务：老师需要通知全班明天临时停课，并发放电子版练习题。</p>
+                        <p>请选择以下一种方式，并思考理由。</p>
+                        <form id="school-form">
+                            <label>
+                                <input type="radio" name="school" value="A">
+                                <span>班级群发消息</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="school" value="B">
+                                <span>电子邮件</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="school" value="C">
+                                <span>网盘链接+群公告</span>
+                            </label>
+                            <button type="button" onclick="viewDetails('school')">查看细节</button>
+                            <div class="follow-up-question hidden">
+                                <p>追问：如果练习题包含答案，如何保证隐私？</p>
+                            </div>
+                        </form>
+                        <div id="school-response"></div>
+                    </div>
+
+                    <!-- 公园场景 -->
+                    <div class="card">
+                        <img src="image/公园.jpg" alt="公园场景" class="scenario-image">
+                        <h3>公园场景</h3>
+                        <p>任务：小红的宠物狗在社区走失，她需要快速扩散寻狗启事。</p>
+                        <p>请选择以下一种方式，并思考理由。</p>
+                        <form id="park-form">
+                            <label>
+                                <input type="radio" name="park" value="A">
+                                <span>社区微信群</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="park" value="B">
+                                <span>朋友圈</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="park" value="C">
+                                <span>微博+定位</span>
+                            </label>
+                            <button type="button" onclick="viewDetails('park')">查看细节</button>
+                            <div class="follow-up-question hidden">
+                                <p>追问：启事中是否需要透露家庭住址？</p>
+                            </div>
+                        </form>
+                        <div id="park-response"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 小结区域 -->
+            <div class="mindmap-summary-section">
+                <h2 class="mindmap-title">小结：在线交流方式</h2>
+                <div class="mindmap-intro">
+                    <p><span class="firework">🎆</span> <strong>让我们一起来回顾在线交流方式</strong></p>
+                </div>
+                
+                <div class="mindmap-content">
+                    <div class="mindmap">
+                        <div class="mindmap-center">
+                            <h3>在线交流方式有哪些？</h3>
+                        </div>
+                        <div class="mindmap-branches">
+                            <div class="branch">
+                                <h4><strong>即时聊天工具</strong> <span class="click-icon">👆</span></h4>
+                                <p class="branch-detail hidden">微信、QQ、钉钉在线聊天……</p>
+                            </div>
+                            <div class="branch">
+                                <h4><strong>视频通话</strong> <span class="click-icon">👆</span></h4>
+                                <p class="branch-detail hidden">微信、钉钉视频功能……</p>
+                            </div>
+                            <div class="branch">
+                                <h4><strong>互动留言板</strong> <span class="click-icon">👆</span></h4>
+                                <p class="branch-detail hidden">抖音、b站评论区、信息课堂作业区……</p>
+                            </div>
+                            <div class="branch">
+                                <h4><strong>游戏社交</strong> <span class="click-icon">👆</span></h4>
+                                <p class="branch-detail hidden">游戏中的快捷短语、开麦和聊天室……</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mindmap-motto">
+                        <p>选择在线交流方式的口诀</p>
+                        <h3>"一看场合二看内容，平台时效要分清，隐私保护记在心！"</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

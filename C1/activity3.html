@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习活动2</title>
+    <!-- 引入通用样式 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入Activity 3的专用样式 -->
+    <link rel="stylesheet" href="css/activity3.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" width="20" height="20">
+                        <path fill="currentColor" d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z"/>
+                    </svg>
+                    首页
+                </a>
+            </li>
+            <li class="nav-item"><a href="activity1.html" class="nav-link">学习活动1</a></li>
+            <li class="nav-item"><a href="activity3.html" class="nav-link active">学习活动2</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <h1>学习活动2：网络文明小卫士培养计划</h1>
+        <p class="subtitle">让我们一起学习如何成为一个有礼貌、有担当的网络公民！</p>
+    </header>
+
+    <main>
+        <section id="discussion1" class="challenge-section">
+            <h2>在线交流文明赛</h2>
+            
+            <!-- 第一行：第一关和第二关 -->
+            <div class="first-row">
+                <div class="level level1">
+                    <h3>第一关：时间把控者</h3>
+                    <div class="scenario-cards">
+                        <div class="card" data-scenario="1">
+                            <div class="card-front">
+                                <h4>场景一</h4>
+                                <img src="image2/1.jpg" alt="晚上打扰同学" class="scene-image">
+                                <p>晚上10点，小美想用微信语音和同学讨论作业。</p>
+                            </div>
+                            <div class="card-back">
+                                <div class="vote-buttons">
+                                    <button class="vote-btn" data-vote="appropriate">适合</button>
+                                    <button class="vote-btn" data-vote="inappropriate">不适合</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" data-scenario="2">
+                            <div class="card-front">
+                                <h4>场景二</h4>
+                                <img src="image2/2.jpg" alt="地铁外放" class="scene-image">
+                                <p>地铁上，小亮用手机外放和爷爷视频聊天。</p>
+                            </div>
+                            <div class="card-back">
+                                <div class="vote-buttons">
+                                    <button class="vote-btn" data-vote="appropriate">适合</button>
+                                    <button class="vote-btn" data-vote="inappropriate">不适合</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="knowledge-card" style="display: none;">
+                        <div class="knowledge-content">
+                            <h4>🌟 知识点 🌟</h4>
+                            <p>跟他人在线交流，要选择合适的时间，尽量不打扰别人。</p>
+                            <button class="close-knowledge">我知道啦！</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="level level2">
+                    <h3>第二关：语言魔法师</h3>
+                    <div class="chatroom">
+                        <div class="chat-container">
+                            <div class="chat-header">
+                                <h4>🌈 快乐聊天室</h4>
+                                <span class="online-count">在线人数：4</span>
+                            </div>
+                            <div class="chat-messages">
+                                <div class="message">
+                                    <div class="message-header">
+                                        <span class="username">小明</span>
+                                        <span class="time">10:00</span>
+                                    </div>
+                                    <div class="message-content">
+                                        大家好！今天天气真好，有没有人想和我一起玩《植物大战僵尸》呀？！😊
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    <div class="message-header">
+                                        <span class="username">小强</span>
+                                        <span class="time">10:02</span>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>别人都玩得这么久了，你才来？真是个输家！（看我刷屏你们哈哈哈）</p>
+                                        <img src="image2/3.png" alt="嘲笑表情" class="message-image">
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    <div class="message-header">
+                                        <span class="username">小美</span>
+                                        <span class="time">10:03</span>
+                                    </div>
+                                    <div class="message-content">
+                                        我们可以轮流玩，这样每个人都能玩到，对吧？这样大家都能开心！🤝
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    <div class="message-header">
+                                        <span class="username">小张</span>
+                                        <span class="time">10:05</span>
+                                    </div>
+                                    <div class="message-content">
+                                        你们都别说话！我才是这里的老大，我说什么你们就得听什么！😠
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rating-sidebar">
+                            <h4>评一评他们的发言</h4>
+                            <div class="rating-list">
+                                <div class="rating-item">
+                                    <span class="rating-name">小明的发言</span>
+                                    <div class="rating-buttons">
+                                        <button class="rating-btn like" data-user="小明">👍赞</button>
+                                        <button class="rating-btn dislike" data-user="小明">👎踩</button>
+                                    </div>
+                                </div>
+                                <div class="rating-item">
+                                    <span class="rating-name">小强的发言</span>
+                                    <div class="rating-buttons">
+                                        <button class="rating-btn like" data-user="小强">👍赞</button>
+                                        <button class="rating-btn dislike" data-user="小强">👎踩</button>
+                                    </div>
+                                </div>
+
+                                <div class="rating-item">
+                                    <span class="rating-name">小美的发言</span>
+                                    <div class="rating-buttons">
+                                        <button class="rating-btn like" data-user="小美">👍赞</button>
+                                        <button class="rating-btn dislike" data-user="小美">👎踩</button>
+                                    </div>
+                                </div>
+                                <div class="rating-item">
+
+                                    <span class="rating-name">小张的发言</span>
+                                    <div class="rating-buttons">
+                                        <button class="rating-btn like" data-user="小张">👍赞</button>
+                                        <button class="rating-btn dislike" data-user="小张">👎踩</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-knowledge-card" style="display: none;">
+                        <div class="knowledge-content">
+                            <h4>🌟 知识点 🌟</h4>
+                            <p>在线交流时也要文明用语，与人真诚交流。</p>
+                            <button class="close-knowledge">我知道啦！</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第二行：第三关和总结面板 -->
+            <div class="second-row">
+                <div class="level level3">
+                    <h3>第三关：隐私守护者</h3>
+                    <div class="activity">
+                        <div class="phone-screen">
+                            <div class="chat-window">
+                                <div class="message">
+                                    <span class="username">快递员:</span> 您好，请提供收件人信息、新联系地址、以及手机号。
+                                </div>
+                                <div class="message">
+                                    <span class="username">我:</span> 
+                                    <div class="placeholder" data-type="info">
+                                        [拖放收件人信息、地址和手机号到这里]
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    <span class="username">快递员:</span> 因为工作失误，会返回一定金额给您，请提供银行卡号，以及订单验证码。
+                                </div>
+                                <div class="message">
+                                    <span class="username">我:</span> 
+                                    <div class="placeholder" data-type="bank">
+                                        [拖放银行卡号和验证码到这里]
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blocks-container">
+                            <div class="block" draggable="true" data-type="info">📋 收件人信息</div>
+                            <div class="block" draggable="true" data-type="info">📍 新联系地址</div>
+                            <div class="block" draggable="true" data-type="info">📱 手机号</div>
+                            <div class="block" draggable="true" data-type="bank">💳 银行卡号</div>
+                            <div class="block" draggable="true" data-type="bank">🔑 订单验证码</div>
+                        </div>
+                    </div>
+                    <div class="knowledge-point">
+                        <p>⚠️ 知识点：在线交流要注意保护个人信息安全，不要轻易相信陌生人的信息！保护好自己的隐私信息！</p>
+                    </div>
+                </div>
+
+                <!-- 总结面板 -->
+                <div class="summary-panel mindmap-summary-section">
+                    <h3>🌟 文明交流总结 🌟</h3>
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <h4>⏰ 合适的时间</h4>
+                            <p>避开休息忙碌时段</p>
+                        </div>
+                        <div class="summary-item">
+                            <h4>📍 合适的场合</h4>
+                            <p>公共场所避免外放</p>
+                        </div>
+                        <div class="summary-item">
+                            <h4>💬 合适的语言</h4>
+                            <p>礼貌用语表达简明</p>
+                        </div>
+                        <div class="summary-item">
+                            <h4>🤝 合适的行为</h4>
+                            <p>文明交流不乱刷屏</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="points-display">
+            <span>当前积分（110分制）：</span>
+            <span id="total-points">0</span>
+        </div>
+        <div class="achievements">
+            <h4>获得的徽章</h4>
+            <div class="badges-container"></div>
+        </div>
+    </footer>
+
+    <!-- 引入通用脚本 -->
+    <script src="js/script.js"></script>
+    <!-- 引入Activity 3的专用脚本 -->
+    <script src="js/activity3.js"></script>
+</body>
+</html>
